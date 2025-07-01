@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="form-wrapper">
+    <form id="contactForm" novalidate>
+      <h1>Reach Out to Us!</h1>
+
+      <div class="form-group">
+        <input type="text" id="name" name="name" required placeholder=" ">
+        <label for="name">Name</label>
+        <small class="error" id="nameError"></small>
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="email" name="email" required placeholder=" ">
+        <label for="email">Email</label>
+        <small class="error" id="emailError"></small>
+      </div>
+
+      <div class="form-group">
+        <input type="tel" id="phone" name="phone" placeholder=" ">
+        <label for="phone">Phone (optional)</label>
+        <small class="error" id="phoneError"></small>
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="subject" name="subject" required placeholder=" ">
+        <label for="subject">Subject</label>
+        <small class="error" id="subjectError"></small>
+      </div>
+
+      <div class="form-group">
+        <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+        <label for="message">Message</label>
+        <small class="error" id="messageError"></small>
+      </div>
+
+      <button type="submit" class="btn">Send Message</button>
+
+      <div class="feedback" aria-live="polite">
+        <span class="success" id="successMsg"></span>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
